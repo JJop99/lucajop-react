@@ -19,8 +19,12 @@ export default function Carousel(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
+  
   const openModal = (image) => {
     setSelectedImage(image);
+    // Rimuovi o usa selectedImage se necessario
+    console.log(selectedImage);
+
     setIsOpen(true);
   };
 
