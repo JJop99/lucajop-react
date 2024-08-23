@@ -9,7 +9,11 @@ function Works() {
     
     async function fetchWorks() {
       try {
-        const response = await fetch('http://localhost:3001/api/works');
+        //localhost version
+        //const response = await fetch('http://localhost:3001/api/works');
+
+        const response = await fetch('/api/works');
+
         console.log(response);
         
         // Controllo dello stato della risposta
