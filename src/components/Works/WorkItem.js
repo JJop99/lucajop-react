@@ -7,7 +7,7 @@ import classes from "./WorkItem.module.sass";
 function WorkItem(props) {
   const navigate = useNavigate();  // Sostituisce useRouter
   const showDetailsHandler = () => {
-    navigate("/" + props.id);  // Sostituisce router.push
+    navigate("/works/" + props.id);  // Sostituisce router.push
   };
 
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });

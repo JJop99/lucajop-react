@@ -8,8 +8,10 @@ export default async function handler(req, res) {
   const db = client.db();
   const worksCollection = db.collection("works");
   const works = await worksCollection.find().toArray();
-  client.close();
   
+  client.close();
+   
+  console.log(works);
   res.status(200).json(works.map((work) => ({
     title: work.title,
     images: JSON.parse(JSON.stringify(work.images)),

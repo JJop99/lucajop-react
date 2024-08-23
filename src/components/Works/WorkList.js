@@ -8,7 +8,7 @@ function WorkList(props) {
       <ul className={classes["list__ul--margin"]}>
         {props.works.map(
           (work) => (
-            console.log(work)
+            console.log(work),
             (
               <WorkItem
                 key={work.id}

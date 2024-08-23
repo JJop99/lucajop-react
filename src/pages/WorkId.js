@@ -9,7 +9,7 @@ function WorkDetails() {
 
   useEffect(() => {
     async function fetchWork() {
-      const response = await fetch(`/api/works/${workId}`);
+      const response = await fetch(`http://localhost:3001/api/works/${workId}`);
       const data = await response.json();
       setWorkData(data);
     }
