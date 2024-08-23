@@ -11,7 +11,6 @@ export default async function handler(req, res) {
   
   client.close();
    
-  console.log(works);
   res.status(200).json(works.map((work) => ({
     title: work.title,
     images: JSON.parse(JSON.stringify(work.images)),
