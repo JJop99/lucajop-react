@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import WorkItem from "./WorkItem";
+import WorkItem from "./WorkItem.js";
 import classes from "./WorkList.module.sass";
 
 function WorkList(props) {

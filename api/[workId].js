@@ -4,7 +4,7 @@ export default async function handler(req, res) {
   const workId = req.query.workId;
   
   const client = await MongoClient.connect(
-    "mongodb+srv://<username>:<password>@cluster0.kajhjck.mongodb.net/works?retryWrites=true&w=majority"
+    "mongodb+srv://JJop99:Jacopo99@cluster0.kajhjck.mongodb.net/works?retryWrites=true&w=majority"
   );
   const db = client.db();
   const worksCollection = db.collection('works');

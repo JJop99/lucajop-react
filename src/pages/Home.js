@@ -1,4 +1,4 @@
-import BackgroundImage from "../components/UI/Image";
+import BackgroundImage from "../components/UI/Image.js";
 
 import classes from "../styles/Home.module.sass";
 

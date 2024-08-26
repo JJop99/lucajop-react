@@ -2,6 +2,7 @@
   "name": "lucajop-reactjs",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@headlessui/react": "^2.1.2",
     "@testing-library/jest-dom": "^5.17.0",

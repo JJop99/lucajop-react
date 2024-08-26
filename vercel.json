@@ -7,14 +7,30 @@
         "config": { "distDir": "build" }
       },
       {
-        "src": "api/**/*.js",
+        "src": "api/works.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "api/[workId].js",
         "use": "@vercel/node"
       }
     ],
     "routes": [
+      { 
+        "src": "/api/works", 
+        "dest": "/api/works.js" 
+      },
+      { 
+        "src": "/api/:workId", 
+        "dest": "/api/[workId].js" 
+      },
       {
-        "src": "/api/(.*)",
-        "dest": "/api/$1"
+        "src": "/static/(.*)",
+        "dest": "/static/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
       }
     ]
   }

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom'; // o un altro router se usi React Router
-import WorkDetail from '../components/Works/WorkDetail';
+import WorkDetail from '../components/Works/WorkDetail.js';
 import { Helmet } from 'react-helmet';
 
 function WorkDetails() {
@@ -12,7 +12,7 @@ function WorkDetails() {
       //localhost version
       //const response = await fetch(`http://localhost:3001/api/works/${workId}`);
 
-      const response = await fetch(`/api/works/${workId}`);
+      const response = await fetch(`/api/${workId}`);
       const data = await response.json();
       setWorkData(data);
     }

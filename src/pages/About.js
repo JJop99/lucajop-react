@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import About from "../components/About/About";
+import About from "../components/About/About.js";
 
 const AboutPage = () => {
   return (

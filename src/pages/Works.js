@@ -1,27 +1,24 @@
 import { useEffect, useState } from 'react';
-import WorkList from '../components/Works/WorkList';
+import WorkList from '../components/Works/WorkList.js';
 import { Helmet } from 'react-helmet';
 
 function Works() {
   const [works, setWorks] = useState([]);
 
   useEffect(() => {
-    
     async function fetchWorks() {
       try {
-        //localhost version
-        //const response = await fetch('http://localhost:3001/api/works');
-
         const response = await fetch('/api/works');
-
-        console.log(response);
-        
-        // Controllo dello stato della risposta
+  
+        console.log('Response:', response);
+  
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
   
         const contentType = response.headers.get("content-type");
+        console.log('Content-Type:', contentType);
+  
         if (contentType && contentType.includes("application/json")) {
           const data = await response.json();
           setWorks(data);
@@ -37,6 +34,7 @@ function Works() {
   
     fetchWorks();
   }, []);
+  
   
 
   return (

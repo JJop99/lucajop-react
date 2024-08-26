@@ -1,6 +1,6 @@
-import MainNavigation from "./MainNavigation";
+import MainNavigation from "./MainNavigation.js";
 import classes from "./Layout.module.sass";
-import ScrollToTop from "../UI/ScrollToTop";
+import ScrollToTop from "../UI/ScrollToTop.js";
 
 function Layout(props) {
   return (

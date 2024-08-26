@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import Timeline from "./Timeline";
+import Timeline from "./Timeline.js";
 import classes from "./About.module.sass"
 
 const About = () => {

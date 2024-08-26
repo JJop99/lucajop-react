@@ -2,12 +2,12 @@ import "./styles/globals.sass";
 
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Layout from './components/Layout/Layout';
-import Home from './pages/Home';
-import About from './pages/About';
-import Contacts from './pages/Contacts';
-import Works from './pages/Works';
-import WorkId from './pages/WorkId';
+import Layout from './components/Layout/Layout.js';
+import Home from './pages/Home.js';
+import About from './pages/About.js';
+import Contacts from './pages/Contacts.js';
+import Works from './pages/Works.js';
+import WorkId from './pages/WorkId.js';
 
 function App() {
   return (

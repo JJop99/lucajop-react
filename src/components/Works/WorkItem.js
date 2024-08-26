@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";  // Sostituisce useRouter di Next.js
 import { useState } from 'react';
 
-import Card from "../UI/Card";
+import Card from "../UI/Card.js";
 import classes from "./WorkItem.module.sass";
 
 function WorkItem(props) {
@@ -28,7 +28,7 @@ function WorkItem(props) {
             </p>
           </div>
           <img  // Sostituisce Image di Next.js
-            src={props.image}  // Assicurati che `props.image` non contenga un "/" iniziale se si trova nella cartella pubblica
+            src={"/"+props.image}  // Assicurati che `props.image` non contenga un "/" iniziale se si trova nella cartella pubblica
             className={classes.img}
             alt={props.title}
             width={dimensions.width || "auto"}
