@@ -7,7 +7,7 @@ const port = 3001;  // Usa una porta diversa da quella del client React
 app.use(cors()); // Abilita CORS per tutte le origini
 
 // Endpoint per ottenere tutti i lavori
-app.get('/api/works', async (req, res) => {
+app.get('/api/localhost/works', async (req, res) => {
   try {
     const client = await MongoClient.connect(
       "mongodb+srv://JJop99:Jacopo99@cluster0.kajhjck.mongodb.net/works?retryWrites=true&w=majority"
@@ -30,7 +30,7 @@ app.get('/api/works', async (req, res) => {
 });
 
 // Endpoint per ottenere i dettagli di un lavoro specifico
-app.get('/api/works/:workId', async (req, res) => {
+app.get('/api/localhost/works/:workId', async (req, res) => {
   const workId = req.params.workId;
   console.log(`Fetching work with ID: ${workId}`);
   try {
