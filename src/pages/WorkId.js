@@ -9,14 +9,20 @@ function WorkDetails() {
 
   useEffect(() => {
     async function fetchWork() {
-      //localhost version
-      //const response = await fetch(`http://localhost:3001/api/works/${workId}`);
-
-      const response = await fetch(`/api/${workId}`);
-      const data = await response.json();
-      setWorkData(data);
+      try {
+        const response = await fetch(`/api/works/${workId}`);
+        
+        if (!response.ok) {
+          throw new Error('Work not found or server error');
+        }
+  
+        const data = await response.json();
+        setWorkData(data);
+      } catch (error) {
+        console.error('Error fetching work:', error);
+      }
     }
-
+  
     fetchWork();
   }, [workId]);
 

@@ -11,7 +11,7 @@
         "use": "@vercel/node"
       },
       {
-        "src": "api/[workId].js",
+        "src": "api/works/[workId].js",
         "use": "@vercel/node"
       }
     ],
@@ -20,9 +20,9 @@
         "src": "/api/works", 
         "dest": "/api/works.js" 
       },
-      { 
-        "src": "/api/:workId", 
-        "dest": "/api/[workId].js" 
+      {
+        "src": "/api/works/(.*)",
+        "dest": "/api/works/[workId].js"
       },
       {
         "src": "/static/(.*)",
