@@ -12,7 +12,7 @@ export default function Home() {
       <BackgroundImage
         style={{zIndex: -1}}
         className={classes.landingImage}
-        src="/Home-01-scaled.jpg"
+        src="/images/Home-01-scaled.jpg"
         alt="Image description"
         layout="fill"
         quality={100}

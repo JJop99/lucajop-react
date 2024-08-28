@@ -60,7 +60,7 @@ export default function Carousel(props) {
                   <img 
                     alt={image.image}
                     key={image.key} 
-                    src={"/"+image.image} 
+                    src={"/images/"+image.image} 
                     width={0}
                     height={0}
                     sizes="100vw"
@@ -110,7 +110,7 @@ export default function Carousel(props) {
                   <img 
                     alt={image.image}
                     key={image.key} 
-                    src={"/"+image.image} 
+                    src={"/images/"+image.image} 
                     priority
                     onClick={() => openModal("/" + image.image)}
                     className={classes.modalImage}

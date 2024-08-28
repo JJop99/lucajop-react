@@ -28,7 +28,7 @@ function WorkItem(props) {
             </p>
           </div>
           <img  // Sostituisce Image di Next.js
-            src={"public/"+props.image}  // Assicurati che `props.image` non contenga un "/" iniziale se si trova nella cartella pubblica
+            src={"/images/"+props.image}  // Assicurati che `props.image` non contenga un "/" iniziale se si trova nella cartella pubblica
             className={classes.img}
             alt={props.title}
             width={dimensions.width || "auto"}
