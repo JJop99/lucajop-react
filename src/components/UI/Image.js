@@ -11,7 +11,12 @@ const BackgroundImage = (props) => {
         style={{
           objectFit: 'cover',
           width: '100%',
-          height: '100%'}}
+          height: '100%',
+          position: "absolute",  // Posiziona l'immagine in modo assoluto
+          top: 0,
+          left: 0,
+          zIndex: -1}}
+          
         quality={props.quality}
         
       />
