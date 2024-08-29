@@ -8,7 +8,7 @@ export default async function handler(req, res) {
   const worksCollection = db.collection('works');
   
   try {
-    const works = await worksCollection.find().toArray();
+    const works = await worksCollection.find().sort({ year: -1 }).toArray();
     client.close();
     
     res.status(200).json(works.map(work => ({
