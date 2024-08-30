@@ -4,7 +4,7 @@ const Contacts = () => {
   return (
     <div className={classes["item--positions"]}>
       <img 
-        src="/IMG_2922.jpg" 
+        src="/images/IMG_2922.jpg" 
         className={classes.img} 
         alt="Luca Jop"  
         width={800}  // Aspect ratio width
