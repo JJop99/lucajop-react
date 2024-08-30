@@ -8,6 +8,7 @@ import About from './pages/About.js';
 import Contacts from './pages/Contacts.js';
 import Works from './pages/Works.js';
 import WorkId from './pages/WorkId.js';
+import NotFound from './pages/NotFound.js';
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/works" element={<Works />} />
             <Route path="/works/:workId" element={<WorkId />} />
+            <Route path="/*" element={<NotFound />} />
+            <Route path="/works/*" element={<NotFound />} />
           </Routes>
         </Layout>
       </Router>
