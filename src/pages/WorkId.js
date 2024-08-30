@@ -40,6 +40,8 @@ function WorkDetails() {
         title={workData.title}
         shortDescription={workData.shortDescription}
         description={workData.description}
+        role={workData.role}
+        
       />
     </>
   );
