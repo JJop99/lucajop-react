@@ -29,7 +29,7 @@ function WorkDetails() {
     }
   
     fetchWork();
-  }, [workId]);
+  }, [workId,navigate]);
 
   if (!workData) return <p>Loading...</p>;
 
