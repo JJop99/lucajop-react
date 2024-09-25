@@ -23,6 +23,10 @@
     {
       "src": "/api/works/(.*)",
       "dest": "/api/works/[workId].js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
     
   ]
