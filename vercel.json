@@ -25,7 +25,7 @@
       "dest": "/api/works/[workId].js"
     },
     {
-      "src": "/(.*)",
+      "src": "/[^.]+",
       "dest": "/"
     }
     
